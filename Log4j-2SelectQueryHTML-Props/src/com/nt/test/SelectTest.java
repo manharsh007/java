@@ -30,7 +30,7 @@ public class SelectTest {
 			con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "system", "manager");
 			logger.debug("connection establish");
 			ps = con.prepareStatement(SELCT_QUERY);
-			logger.debug("prepared statement");
+			logger.debug("prepared statement created");
 			rs = ps.executeQuery();
 			logger.debug("ResultSET PROCESSED");
 			if (rs != null) {
